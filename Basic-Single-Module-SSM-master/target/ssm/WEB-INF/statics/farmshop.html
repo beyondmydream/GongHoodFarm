@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.6,user-scalable=no" id="vt"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/farm.css"/>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title></title>
+</head>
+<body style="background-color:#6a6665;">
+
+<div class="farmtitle"><span>道具雇员店</span></div>
+<div class="farmshop">
+
+    <div class="icon icsun"></div>
+    <div class="icon ictool"></div>
+    <div class="icon icfrcar"></div>
+    <div class="icon ictool1"></div>
+    <div class="icon ic1" onclick="showMymodal();"></div>
+    <div class="icon ic2"></div>
+    <div class="icon ic3"></div>
+    <div class="icon ic4"></div>
+    <div class="icon ic5"></div>
+    <div class="icon ic6"></div>
+    <div class="icon ic7"></div>
+    <div class="icon ic8"></div>
+    <div class="icon ic9"></div>
+    <div class="icon ic10"></div>
+    <div class="icon ic11"></div>
+    <div class="icon ic12"></div>
+    <div class="icon ic13"></div>
+    <div class="icon ic14"></div>
+    <div class="icon ic15"></div>
+    <div class="icon ic16"></div>
+    <br style="clear: both"/>
+    <div class="goback"></div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" id="myModalDialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">雇员</h4>
+            </div>
+            <div class="modal-body">
+                <div class="sprow">
+                    <div class="icon_sp"><img src="farmimg/farmer.png" height="60px" width="60px"/></div>
+                    <div class="sp_text">农斗士</div>
+                    <div class="sp_content">
+                        <p>HP/MP:100</p>
+                        <p>防御：60</p>
+                        <p>守护：力挽狂澜</p>
+                    </div>
+                    <div class="sp_content">
+                        <p>普攻：大铁锤</p>
+                        <p>魔攻：农药喷洒</p>
+                        <p>魔防：植物防身</p>
+                    </div>
+
+                    <div class="sp_add">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+					<span class="input-group-btn">
+       <button class="btn btn-default" type="button" style="border-right: none;" onclick="sub1()">-</button>
+     </span>
+                                    <input type="text" class="form-control" id="dou" value="1" style="text-align: center;">
+                                    <span class="input-group-btn">
+       <button class="btn btn-default" type="button" onclick="add1()">+</button>
+     </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sprow">
+                    <div class="icon_sp"><img src="farmimg/ninja.png" height="60px" width="60px"/></div>
+                    <div class="sp_text">农刺客</div>
+                    <div class="sp_content">
+                        <p>HP/MP:100</p>
+                        <p>防御：60</p>
+                        <p>偷盗：顺手牵羊</p>
+                    </div>
+                    <div class="sp_content">
+                        <p>普攻：扔小石头</p>
+                        <p>魔攻：扔仙人球</p>
+                        <p>魔防：双臂交叉</p>
+                    </div>
+
+                    <div class="sp_add">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+					<span class="input-group-btn">
+       <button class="btn btn-default" type="button" onclick="sub2()" style="border-right: none;">-</button>
+     </span>
+                                    <input type="text" class="form-control" id="nin" value="1" style="text-align: center;">
+                                    <span class="input-group-btn">
+       <button class="btn btn-default" type="button" onclick="add2()">+</button>
+     </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sprow">
+                    <div class="icon_sp"><img src="farmimg/nurse.png" height="60px" width="60px"/></div>
+                    <div class="sp_text">农医师</div>
+                    <div class="sp_content">
+                        <p>HP/MP:150</p>
+                        <p>防御：80</p>
+                        <p>治疗：秒手回春</p>
+                    </div>
+                    <div class="sp_content">
+                        <p>普攻：打针</p>
+                        <p>魔攻：配制药剂</p>
+                        <p>魔防：守护盾牌</p>
+                    </div>
+
+                    <div class="sp_add">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+					<span class="input-group-btn">
+       <button class="btn btn-default" type="button" onclick="sub3()" style="border-right: none;">-</button>
+     </span>
+                                    <input type="text" class="form-control" id="nur" value="1" style="text-align: center;">
+                                    <span class="input-group-btn">
+       <button class="btn btn-default" type="button" onclick="add3()">+</button>
+     </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sprow">
+                    <div class="icon_sp"><img src="farmimg/fashi.png" height="60px" width="60px"/></div>
+                    <div class="sp_text">农法师</div>
+                    <div class="sp_content">
+                        <p>HP/MP:100</p>
+                        <p>防御：50</p>
+                        <p>移动：攻速上升</p>
+                    </div>
+                    <div class="sp_content">
+                        <p>普攻：法杖</p>
+                        <p>魔攻：水球</p>
+                        <p>魔防：魔法结界</p>
+                    </div>
+
+                    <div class="sp_add">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+					<span class="input-group-btn">
+       <button class="btn btn-default" type="button" style="border-right: none;" onclick="sub4()">-</button>
+     </span>
+                                    <input type="text" class="form-control" id="number" value="1"
+                                           style="text-align: center;">
+                                    <span class="input-group-btn">
+       <button class="btn btn-default" type="button" onclick="add4()">+</button>
+     </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer" style="clear: both;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" onclick="employ()">确认雇佣</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <script>
+        function employ() {
+            alert("购买成功");
+        }
+        function add4() {
+            var i = document.getElementById("number").value;
+            i++;
+            console.log(i);
+            document.getElementById("number").value = i;
+        }
+        function sub4() {
+            var i = document.getElementById("number").value;
+            i--;
+            if (i < 0){
+                i = 0;
+            }
+            console.log(i);
+            document.getElementById("number").value = i;
+        }function add1() {
+            var i = document.getElementById("dou").value;
+            i++;
+            console.log(i);
+            document.getElementById("dou").value = i;
+        }
+        function sub1() {
+            var i = document.getElementById("dou").value;
+            i--;
+            if (i < 0){
+                i = 0;
+            }
+            console.log(i);
+            document.getElementById("dou").value = i;
+        }function add2() {
+            var i = document.getElementById("nin").value;
+            i++;
+            console.log(i);
+            document.getElementById("nin").value = i;
+        }
+        function sub2() {
+            var i = document.getElementById("nin").value;
+            i--;
+            if (i < 0){
+                i = 0;
+            }
+            console.log(i);
+            document.getElementById("nin").value = i;
+        }function add3() {
+            var i = document.getElementById("nur").value;
+            i++;
+            console.log(i);
+            document.getElementById("nur").value = i;
+        }
+        function sub3() {
+            var i = document.getElementById("nur").value;
+            i--;
+            if (i < 0){
+                i = 0;
+            }
+            console.log(i);
+            document.getElementById("nur").value = i;
+        }
+        $(document).ready(function () {
+            $('#myModal').on("show.bs.modal", function () {
+                // 是弹出框居中。。。
+                var modal_dialog = $("body").find('#myModalDialog');
+                //获取可视窗口的高度
+                var clientHeight = (document.body.clientHeight > document.documentElement.clientHeight) ? document.body.clientHeight : document.documentElement.clientHeight;
+                //得到dialog的高度
+                var dialogHeight = modal_dialog.height();
+                //计算出距离顶部的高度
+                var m_top = (clientHeight - dialogHeight) / 3;
+                console.log("document.body.clientHeight : " + document.body.clientHeight);
+                console.log("document.documentElement.clientHeight : " + document.documentElement.clientHeight);
+                console.log("clientHeight : " + clientHeight);
+                console.log("dialogHeight : " + dialogHeight);
+                console.log("m_top : " + m_top);
+                modal_dialog.css({'margin': m_top + 'px auto'});
+            });
+            $('#myModal').on("hidden.bs.modal", function () {
+
+            });
+        });
+
+        $('.modal-content').click(
+            function () {
+                $.ajax({
+                    type: "post",
+                    url: "/employee/queryEmployee.from?e_id=" + e_id,
+                    dataType: "html",//发送给服务的类型
+                    success: function (msg) {
+                        if (msg == "0") {
+                            alert("网络异常！");
+                        } else alert(msg);
+                    }
+                })
+            })
+
+        function showMymodal() {
+            $('#myModal').modal('show');
+        }
+        $(".goback").click(function () {
+            window.location.href = 'mainFarmNew.html';
+        });
+    </script>
+</body>
+</html>

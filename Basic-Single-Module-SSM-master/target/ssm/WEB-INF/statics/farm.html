@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no" id="vt"/>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <link rel="stylesheet" href="css/farm.css"/>
+    <title></title>
+
+    <script type="text/javascript">
+        function touser() {
+            window.location.href = "userinfo.html";
+        }
+        function torankSys() {
+            window.location.href = "rankSys.html";
+        }
+        function tobag() {
+            window.location.href = "mypacksack.html";
+        }
+        function recharge() {
+            window.location.href = "recharge.html";
+        }
+        function totask() {
+            window.location.href = "taskList.html";
+        }
+        function tojiangli() {
+            window.location.href = "no_development.html";
+        }
+        function togongshe() {
+            window.location.href = "no_development.html";
+        }
+        function tochoujiang() {
+            window.location.href = "no_development.html";
+        }
+        function tohuodong() {
+            window.location.href = "no_development.html";
+        }
+        function toenhance() {
+            window.location.href = "strengthenprop.html";
+        }
+        function toClass() {
+            window.location.href = "survey-master/questionMain.html";
+        }
+        function toCai() {
+            window.location.href = "farm.html";
+        }
+        function toZuoWu() {
+            window.location.href = "nongzuowu.html";
+        }
+        function toGuYuan() {
+            window.location.href = "farmshop.html"
+        }
+        function toZhiBo() {
+            window.location.href = "no_development.html";
+        }
+    </script>
+</head>
+<body class="jb">
+<script>
+    $(document).ready(function () {
+        $("#up").click(function () {
+            $("#user_menu").hide(700);
+            $("#up").css({display: "none"});
+            $("#down").css({display: "block"});
+        });
+        $("#down").click(function () {
+            $("#user_menu").show(700);
+            $("#down").css({display: "none"});
+            $("#up").css({display: "block"});
+        });
+    });
+
+</script>
+
+<div class=" usebox">
+    <div class="user">
+        <div class="user_hp">
+            <div class="hendpor"><img src="farmimg/userdef.png" width="63" height="70"/></div>
+            <span class="lvfont">Lv</span><span class="lvfont" id="grade">10</span>
+        </div>
+        <div id="user_info">
+            <div id="user_name"><span class="user_name_font" id="username">用户名</span>
+                <div id="menu_col">
+                    <img src="farmimg/down.png" height="13" width="18" id="down">
+                    <img src="farmimg/up.png" height="13" width="18" id="up" class="hide">
+
+                </div>
+            </div>
+            <div class="user_game_info"><img src="farmimg/tl.png" width="16" height="16" class=" img_view"><span
+                    class="user_game_font">体力</span><span class="user_game_font vitality" id="vitality">100</span></div>
+            <div class="user_game_info"><img src="farmimg/jb.png" width="16" height="16" class=" img_view"><span
+                    class="user_game_font">金币</span><span class="user_game_font money" id="money">100</span></div>
+            <div class="user_game_info"><img src="farmimg/zs.png" width="15" height="15" class=" img_view"><span
+                    class="user_game_font">钻石</span><span class="user_game_font diamond" id="diamond">100</span></div>
+        </div>
+        <div class="clear"></div>
+        <div id="user_menu" class="hide">
+            <div class="game_menu" onclick="recharge()"><img src="farmimg/cz.png" width="30" height="26"
+                                                             class=" img_menu"><span class="menu_font">充值</span></div>
+            <div class="game_menu" onclick="tohuodong()"><img src="farmimg/hd.png" width="25" height="25"
+                                                              class=" img_menu"><span class="menu_font">活动</span></div>
+            <div class="game_menu" onclick="tojiangli()"><img src="farmimg/jl.png" width="27" height="26"
+                                                              class=" img_menu"><span class="menu_font">奖励</span></div>
+            <div class="game_menu" onclick="tochoujiang()"><img src="farmimg/cj.png" width="25" height="26"
+                                                                class=" img_menu"><span class="menu_font">抽奖</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div class="bk">
+    <div id="qy1" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy2" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy3" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy4" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy5" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy6" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy7" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy8" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy9" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy10" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy11" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy12" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy13" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy14" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div id="qy15" class="qyxz" onclick="clicksoil(this.id)"></div>
+    <div class="bkicon" onclick="tobag()">
+        <div class="kk1"><img src="farmimg/bb.png" width="50" height="50"></div>
+        <span>背包</span></div>
+    <div class="bkicon1" onclick="totask()">
+        <div class="kk1"><img src="farmimg/rw.png" width="48" height="50"></div>
+        <span>任务</span></div>
+    <div class="bkicon2" onclick="torankSys()">
+        <div class="kk1"><img src="farmimg/phb.png" width="48" height="50"></div>
+        <span>排行榜</span></div>
+    <div class="bkicon3" onclick="toZhiBo()">
+        <div class="kk1"><img src="farmimg/sxj.png" width="53" height="49"></div>
+        <span>直播</span></div>
+    <div class="bkicon4">
+        <div class="kk1"><img src="farmimg/homepage.png" width="44" height="49"></div>
+        <span>主页</span></div>
+</div>
+<div class="game_tool">
+    <div class="tool">
+        <div class="toolicon">
+            <div class="kk"><img src="farmimg/js.png" width="70" height="55" style="margin: 4px;"
+                                 onclick="changeType(this.id)" id="js"></div>
+            <span>浇水</span></div>
+        <div class="toolicon">
+            <div class="kk"><img src="farmimg/zz.png" width="50" height="55" style="margin: 4px;"
+                                 onclick="changeType(this.id)" id="zz"></div>
+            <span>种子</span></div>
+        <div class="toolicon">
+            <div class="kk"><img src="farmimg/cc.png" width="50" height="65" id="cc" onclick="changeType(this.id)">
+            </div>
+            <span>除草</span></div>
+        <div class="toolicon">
+            <div class="kk"><img src="farmimg/sf.png" width="50" height="60" onclick="changeType(this.id)" id="sf">
+            </div>
+            <span style="margin:8px 0 0 0;">化肥</span></div>
+        <div class="toolicon">
+            <div class="kk"><img src="farmimg/chc.png" width="50" height="64" id="chuchong"
+                                 onclick="changeType(this.id)"></div>
+            <span style="margin:4px 0 0 0;">除虫</span></div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(
+        function () {
+            <!--激活道具雇农店隐藏页-->
+            $("#pes").hide();
+            $("#zz").click(function () {
+                $("#pes").show();
+            });
+        })
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#a").click(function () {
+            $("#pes").hide();
+        });
+        $("#chuchong").click(function () {
+            $("#pes").hide();
+        });
+        $("#sf").click(function () {
+            $("#pes").hide();
+        });
+        $("#cc").click(function () {
+            $("#pes").hide();
+        });
+        $("#js").click(function () {
+            $("#pes").hide();
+        });
+    });
+</script>
+
+<div id="pes" style="height: 100%;width: 100%;float: left;z-index:2;position: absolute;left: 0;top: 0">
+    <div id="pes_bg">
+        <div id="font">已拥有</div>
+        <div id="pse_closeThisPage"><a></a></div>
+        <div id="pes_bg_box0">
+            <div class="employer1"><a id="crop1" href="####" onclick="crop(this.id)"><img src="images/crops/crop1/seed.png"></a><a>x10</a></div>
+        </div>
+        <div id="pes_bg_box1">
+            <div class="employer2"><a id="crop2" href="####" onclick="crop(this.id)"><img
+                    src="images/crops/crop2/seed.png"></a><a>x10</a></div>
+        </div>
+        <div id="pes_bg_box2">
+            <div class="employer3"><a id="crop3" href="####" onclick="crop(this.id)"><img
+                    src="images/crops/crop3/seed.png"></a><a>x10</a></div>
+        </div>
+        <!--<div id="pes_bg_box3">-->
+            <!--<div class="employer4"><a id="crop4" href="####" onclick="crop(this.id)"><img-->
+                    <!--src="images/crops/crop4/seed.png"></a><a>x10</a></div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+
+<script>
+    function crop(v) {
+        $("#pes").hide();
+        var imgObject = $('#' + v + '').children("img");
+        var imgurl = imgObject.attr("src");
+        console.log("imgObject==========="+imgObject);
+        console.log("imgurl==========="+imgurl);
+        $(".bk").css("cursor", "url(" + imgurl + "), url(" + imgurl + "),auto");
+    }
+    function clicksoil(v) {
+        if (v == "qy1") {
+            console.log($("html").css("cursor"));
+            var url = $(".bk").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1].split("?")[0];
+            var uzz_id = testLast[testLast.length - 1].split("?")[1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+            }
+            else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#qy1").siblings(".seed").attr("src", newurl);
+                $(".bk").css("cursor", "");
+                $.ajax({
+                    type: "post",
+                    url: "/lakeFarm/ReducePersonCropCount.from?uzz_id=" + uzz_id + "",
+                    dataType: "html",
+                    success: function (msg) {
+                        if (msg == "100") {
+                            alert("网络异常");
+                        }
+                        else if (msg == "101" || msg == "102") {
+                            alert("你还没有登陆，请重新登陆");
+                            window.location.href = "login.html";
+                        }
+                        else if (msg == "1") {
+                            console.log("種子數量減少");
+                            location.reload();
+                        }
+                    }
+                })
+            }
+        } else if (v == "soil2") {
+//            var url = $(".bk").css("cursor").split("\"")[1];
+//            var testLast = url.split("/");
+//            var test = testLast[testLast.length - 1];
+            var url = $(".bk").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1].split("?")[0];
+            var uzz_id = testLast[testLast.length - 1].split("?")[1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+            }
+            else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#qy1").siblings(".seed").attr("src", newurl);
+                $(".bk").css("cursor", "");
+                $.ajax({
+                    type: "post",
+                    url: "/lakeFarm/ReducePersonCropCount.from?uzz_id=" + uzz_id + "",
+                    dataType: "html",
+                    success: function (msg) {
+                        if (msg == "100") {
+                            alert("网络异常");
+                        }
+                        else if (msg == "101" || msg == "102") {
+                            alert("你还没有登陆，请重新登陆");
+                            window.location.href = "login.html";
+                        }
+                        else if (msg == "1") {
+                            console.log("種子數量減少");
+                            location.reload();
+                        }
+                    }
+                })
+            }
+        } else if (v == "soil3") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil3").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+
+        } else if (v == "soil4") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil4").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+        } else if (v == "soil5") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil5").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+        } else if (v == "soil6") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil6").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+        } else if (v == "soil7") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil7").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+        } else if (v == "soil8") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil8").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+        } else if (v == "soil9") {
+            var url = $("html").css("cursor").split("\"")[1];
+            var testLast = url.split("/");
+            var test = testLast[testLast.length - 1];
+            if (test != "seed.png") {
+                console.log("图片不是种子　无法种植");
+            } else {
+                var newurl = url.replace("seed.png", "1.png");
+                $("#soil9").siblings(".seed").attr("src", newurl);
+                $("html").css("cursor", "");
+            }
+        }
+    }
+</script>
+
+<script>
+    var zzi = false;
+    var ccao = false;
+    function changeType(v) {
+        if (v == "cc") {
+            ccao = true;
+            zzi = false;
+            $(".bk").css("cursor", "url(farmimg/ccing.png),auto");
+        }
+
+        else if (v == "chuchong") {
+            ccao = zzi = false;
+            $(".bk").css("cursor", "url(farmimg/ccoing.png),auto");
+        }
+
+        else if (v == "zz") {
+            zzi = true;
+            ccao = false;
+            if (v == "pes_bg_box0") {
+                $(".bk").css("cursor", "url(images/crops/crop1/seed.png),auto");
+            }
+            else if (v == "pes_bg_box1") {
+                $(".bk").css("cursor", "url(images/crops/crop2/seed.png),auto")
+            }
+            else if (v == "pes_bg_box2") {
+                $(".bk").css("cursor", "url(images/crops/crop3/seed.png),auto")
+            }
+            else if (v == "pes_bg_box3") {
+                $(".bk").css("cursor", "url(images/crops/crop4/seed.png),auto")
+            }
+        }
+        else if (v == "sf") {
+            ccao = zzi = false;
+            $(".bk").css("cursor", "url(farmimg/sfing.png),auto");
+        }
+        else if (v == "js") {
+            ccao = zzi = false;
+            $(".bk").css("cursor", "url(farmimg/jsing.png),auto");
+        }
+    }
+
+    $(".bk").children().click(function () {
+        if (zzi == true && $(this).hasClass("qyxz")) {
+            $(this).addClass("zwxz").removeClass("qyxz");
+        }
+        else if (ccao == true && $(this).hasClass("zwxz")) {
+            $(this).addClass("qyxz").removeClass("zwxz");
+        }
+    });
+
+    $(".bkicon4").click(function () {
+        window.location.href = 'mainFarmNew.html';
+    });
+</script>
+
+</body>
+
+<!--个人信息模块-->
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "post",
+            url: "/lakeFarm/GetUserInfo.from",
+            dataType: "html",
+            success: function (msg) {
+                if (msg == "100") {
+                    alert("网络异常");
+                }
+                else if (msg == "101" || msg == "102") {
+                    alert("你还没有登陆，请重新登陆");
+                    window.location.href = "login.html";
+                }
+                else {
+                    var u_vitality = msg.split("#")[5].split(":")[1];
+                    var u_diamond = msg.split("#")[2].split(":")[1];
+                    var u_money = msg.split("#")[1].split(":")[1];
+                    var u_grade = msg.split("#")[6].split(":")[1];
+                    var u_name = msg.split("#")[0].split(":")[1];
+                    $("#vitality").html(u_vitality);
+                    $("#money").html(u_money);
+                    $("#diamond").html(u_diamond);
+                    $("#grade").html(u_grade);
+                    $("#username").html(u_name);
+                    <!--获取种子-->
+                    $.ajax({
+                        type: "post",
+                        url: "/lakeFarm/GetPersonGrowPlants.from",
+                        dataType: "html",
+                        success: function (msg) {
+                            if (msg == "100") {
+                                alert("网络异常");
+                            }
+                            else if (msg == "101" || msg == "102") {
+                                alert("你还没有登陆，请重新登陆");
+                                window.location.href = "login.html";
+                            }
+                            else {
+                                console.log("msg======="+msg)
+                                var List = msg.split("#$%");
+                                console.log("List======"+List);
+                                var ListSize = List.length - 1;
+                                console.log(ListSize+"   LIstSIze")
+                                var result = "";
+                                for (var i = 0; i < ListSize; i++) {
+                                    var single = List[i].split("$*");
+                                    var uzz_id = single[1];
+                                    var zz_icon = single[3];
+                                    var zz_count = single[5];
+                                    console.log("zz_count=============="+zz_count);
+                                    var t = i+1;
+                                    var class_employer = "employer"+t;
+                                    var pes_b = "pes_bg_box"+i;
+//                                    result += '<li class="class_employer"><a id="' + uzz_id + '"  href="####" onclick="crop(this.id)"><img src="' + zz_icon + '?' + uzz_id + '"></a><a>x' + zz_count + '</a></li>';
+                                    result = '<div class="class_employer"><a id="' + uzz_id + '" href="####" onclick="crop(this.id)"><img src="' + zz_icon + '?' + uzz_id + '"></a><a>x' + zz_count + '</a></div>'
+                                    $('#'+pes_b).html(result);
+                                }
+//                                $("#pes_bg ul").html(result);
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    });
+</script>
+</html>

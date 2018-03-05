@@ -1,0 +1,385 @@
+*{ margin: 0;}
+			.clear{ clear: both;}
+			.jb {
+				width:auto;
+				height:-moz-calc();
+		
+				
+				background: radial-gradient(circle at center, #fff 5px, #8abbd9);
+				
+			}
+			#eth {
+				width: 500px;
+				height: 493px;
+				background-image:url(../farmimg/cs1.png);
+				margin:90px auto;
+				
+			}
+			.state{
+				margin:0px auto;
+				height: auto;
+				width: auto;
+			}
+			.user{width: 500px;
+			 height:auto;
+			 background-color:white;
+			 margin: 20px auto 0 auto;
+			 border: none;
+			 border-radius:12px;
+			 box-shadow: 0px 8px 16px 0px darkgray;
+				
+			}
+			
+			.cinput{ width: 500px; height: 100px;
+			  margin: 0 auto;
+			  border:0px;
+			  			  }
+			  .bt{ width: 80px; height: 30px; border:0px; border-radius:12px ;
+			   background-color: white; 
+			    box-shadow: 0px 8px 16px 0px darkgray;
+			    margin:0 10px;
+			    float: left;
+			    font-family: "微软雅黑";
+			    line-height: 30px;
+			    font-weight: 800;
+			    color:#55b43e;}
+			    .user_hp{
+			    	width: 90px;
+			    	height: 100px;
+			    	
+			    	border-radius:12px ;
+			    	border:0px;
+			        float: left;
+			        margin: 5px 0 0 10px;
+			        text-align: center;
+			    }
+			    #user_menu{
+			    	width: 480px;
+			    	height: 40px;
+			    	
+			    	clear: both;
+			    	margin:0 auto;
+			    	border-top:1px solid gainsboro;
+			    	
+			    }
+			    #user_info{
+			    	width: 385px;
+			    	height: 85px;
+			    	float: right;
+			    	
+			    	margin: 10px 10px 0 0;
+			    }
+			    .hendpor{width: 63px;
+			        height: 70px; 
+			    	
+			    	margin: 0 auto;}
+			    .lvfont{font-family: "微软雅黑","arial black";
+			    font-size:20px;
+			    margin: 0 1px;
+			    font-weight: 800;
+			    
+			    	
+			    }	
+			    #user_name{
+			    	width: 380px;
+			    	height: 30px;
+			    	
+			    }
+			    .user_name_font{
+			    	font-family: "微软雅黑","arial black";
+			    font-size:16px;
+			    font-weight: 800;
+			    margin: 2px 0;
+			    float: left;
+			    }
+			    #menu_col{
+			    	float:right;
+			    	
+			    }
+			    .hide{ display: none;}
+			    .user_game_info{
+			    	height: 30px;
+			    	width: 110px;
+			    	
+			    	float: left;
+			    	margin: 16px 5px 0 10px ;
+			    }
+			    .user_game_font{
+			    	font-family: "微软雅黑","arial black";
+			    font-size:15px;
+			    margin-right: 6px;
+			    color:#55b43e;
+			   
+			    }
+			    .img_view{
+			    	margin: 3px 4px 0 0;
+			    	float: left;
+			    }
+			    .game_menu{
+			    	width: 110px;
+			    	height: 40px;
+			    	
+			    	float: left;
+			    	margin: 0 5px;
+			    }
+			    .menu_font{
+			    font-family: "微软雅黑","arial black";
+			    font-size:19px;
+			    margin-right: 6px;
+			    color:#50c1f1;
+			    margin: 8px 0;
+			    float: left;
+			    }
+			    .img_menu{
+			    	margin: 7px 6px 0 14px;
+			    	float: left;
+			    }
+			    #switch1{ width: 228px; height: 177px; 
+			    float: left;
+			    margin:0 0 0 58px;
+			    opacity:0.90;
+			    
+			   }
+			    
+			    #switch1:hover{display: block;background-image: url(../farmimg/switch1.png);}
+			    #switch1 span{display: none;
+			    text-align: center;
+			    line-height:177px;
+			    color: #50C1F1;
+			    font-family: "微软雅黑";
+			    font-weight: bold;}
+			    #switch1:hover span{display: block;}
+			    
+			     #switch2{ width:170px; height:249px; 
+			    float: left;
+			    margin:116px 0 0 0;
+			    opacity:0.90;
+			    
+			    clear: both;
+			    position:absolute;
+			   }
+			    #switch2:hover{display: block;background-image: url(../farmimg/switch2.png);}
+			    #switch2 span{display: none;
+			    text-align: center;
+			    line-height:249px;
+			    color: #50C1F1;
+			    font-family: "微软雅黑";
+			    font-weight: bold;}
+			    #switch2:hover span{display: block;}
+			     #switch3{ width:204px; height:198px; 
+			    float: left;
+			    margin:295px 0 0 37px;
+			    opacity:0.90;
+			    
+			    clear: both;
+			    position:absolute;
+			   }
+			    #switch3:hover{display: block;background-image: url(../farmimg/switch3.png);}
+			    #switch3 span{display: none;
+			    text-align: center;
+			    line-height:198px;
+			    color: #50C1F1;
+			    font-family: "微软雅黑";
+			    font-weight: bold;}
+			    #switch3:hover span{display: block;}
+			    #switch4{ width:228px; height:159px; 
+			    float: left;
+			    margin:334px 0 0 201px;
+			    opacity:0.90;
+			    
+			    clear: both;
+			    position:absolute;
+			   }
+			    #switch4:hover{display: block;background-image: url(../farmimg/switch4.png);}
+			    #switch4 span{display: none;
+			    text-align: center;
+			    line-height:130px;
+			    color: #50C1F1;
+			    font-family: "微软雅黑";
+			    font-weight: bold;}
+			    #switch4:hover span{display: block;}
+			     #switch5{ width:208px; height:257px; 
+			    float:left;
+			    margin:98px 0 0 292px;
+			    opacity:0.90;
+			    
+			    clear: both;
+			    position:absolute;
+			   }
+			    #switch5:hover{display: block;background-image: url(../farmimg/switch5.png);}
+			    #switch5 span{display: none;
+			    text-align: center;
+			    line-height:257px;
+			    color: #50C1F1;
+			    font-family: "微软雅黑";
+			    font-weight: bold;}
+			    #switch5:hover span{display: block;}
+			    #switch6{ width:197px; height:273px; 
+			    float:left;
+			    margin:127px 0 0 155px;
+			    opacity:0.90;
+			    
+			    clear: both;
+			    position:absolute;
+			   }
+			    #switch6:hover{display: block;background-image: url(../farmimg/switch6.png);}
+			    #switch6 span{display: none;
+			    text-align: center;
+			    line-height:273px;
+			    color: #50C1F1;
+			    font-family: "微软雅黑";
+			    font-weight: bold;}
+			    #switch6:hover span{display: block;}
+			    .bk{width: 796px;
+			height: 470px;
+			 background-image:url(../farmimg/form.png);
+			 margin: 240px auto 100px auto;}
+			 
+			 .usebox{ width: 796px;
+			 height: auto;
+			 
+			 margin: 0 auto;}
+			 
+			 .game_tool{
+			 	margin: 0 auto 20px auto;
+			 	width: 796px;
+			 	height: 100px;
+			 	
+			 }
+			 .tool{
+			 	margin: 0 auto;
+			 	width: 600px;
+			 	height: 100px;
+			 text-align: center;
+			 font-family: "微软雅黑";
+			 color:gray;
+			 background-color: white;
+			 border-radius:15px ;
+			 
+			 box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+			 padding-top: 10px;
+			 background: rgba(255,255,255,.5);
+			 
+			 }
+			 
+			 .toolicon{
+			 	margin: 0 25px;
+			 	float: left;
+			 	width: 70px;
+			 	height: 100px;
+			 	 cursor: pointer;
+			
+			 }
+			.kk{
+				width: 70px;
+			 	height:68px;
+				
+			}
+			.bkicon{
+			 	margin: -140px 0 0 360px;
+			 	float:right;
+			 	width: 60px;
+			 	height: 50px;
+			 	 text-align: center;
+			 font-family: "微软雅黑";
+			 color:white;
+			 position: absolute;
+			 cursor: pointer;
+			 	
+			
+			 }
+			 .bkicon1{
+			 	margin: -140px 0 0 470px;
+			 	float:right;
+			 	width: 60px;
+			 	height: 50px;
+			 	 text-align: center;
+			 font-family: "微软雅黑";
+			 color:white;
+			 position: absolute;
+			  cursor: pointer;
+			 	
+			
+			 }
+			 .bkicon2{
+			 	margin: -140px 0 0 580px;
+			 	float:right;
+			 	width: 60px;
+			 	height: 50px;
+			 	 text-align: center;
+			 font-family: "微软雅黑";
+			 color:white;
+			 position: absolute;
+			  cursor: pointer;
+			 	
+			
+			 }
+			 .bkicon3{
+			 	margin: -140px 0 0 690px;
+			 	float:right;
+			 	width: 60px;
+			 	height: 50px;
+			 	 text-align: center;
+			 font-family: "微软雅黑";
+			 color:white;
+			 position: absolute;
+			  cursor: pointer;
+			 	
+			
+			 }
+			 .kk1{
+				width: 60px;
+			 	height:55px;
+				
+			}
+			.farmtitle{ width:500px; height:50px; background-color:#6a6665;margin: 30px auto 10px auto; font-family: "微软雅黑"; color: white; font-size: 25px;text-align: center;
+				
+			}
+			.farmshop{ width:500px; height: 500px; background-color:#6a6665;margin: 0 auto;
+				
+			}
+			.icon{width:100px; height: 100px; background-image: url(../farmimg/bkgd.png); background-size: 600%;float: left; margin:10px 10px; border-radius: 10px;}
+			.icon:hover{background-color: gainsboro;box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);}
+            .icsun{background-position: -8px -12px;}
+            .ictool{background-position: -140px -4px;}
+            .icfrcar{background-position: -248px -8px;}
+            .ictool1{background-position: -354px -2px;}
+            .ic1{background-position: -8px -118px;}
+            .ic2{background-position: -137px -126px;}
+            .ic3{background-position: -262px -122px;}
+            .ic4{background-position: -371px -124px;}
+            .ic5{background-position: -8px -230px;}
+            .ic6{background-position: -138px -238px;}
+            .ic7{background-position: -352px -234px;}
+            .ic8{background-position: -472px -237px;}
+            .ic9{background-position: -13px -347px;}
+            .ic10{background-position: -132px -350px;}
+            .ic11{background-position: -252px -350px;}
+            .ic12{background-position: -371px -353px;}
+            .ic13{background-position: -490px -338px;}
+            .ic14{background-position: -239px -226px;}
+            .ic15{background-position: -476px -14px;}
+            .ic16{background-position:  -484px -118px;}
+            .icon_sp{width: 30px; height: 30px; float: left;}
+            .sp_text{width: 100px; height: 30px; float: left; font-family: "微软雅黑"; font-size: 18px; line-height: 30px; color: grey; margin-left: 15px;}
+            .sp_add{width:300px; height: 30px; float:right; margin-bottom: 15px;}
+            .sprow{ clear: both;}
+            
+            .qyxz{width: 111px; height: 55px;}
+			#qy1{position: absolute;margin:166px 0  0  178px;}
+			#qy2{position: absolute;margin:138px 0  0  244px;}
+			#qy3{position: absolute;margin:108px 0  0  312px;}
+			#qy4{position: absolute;margin:196px 0  0  236px;}
+			#qy5{position: absolute;margin:168px 0  0  302px;}
+			#qy6{position: absolute;margin:138px 0  0  370px;}
+			#qy7{position: absolute;margin:228px 0  0  284px;}
+			#qy8{position: absolute;margin:196px 0  0  356px;}
+			#qy9{position: absolute;margin:168px 0  0  420px;}
+			#qy10{position: absolute;margin:258px 0  0  346px;}
+			#qy11{position: absolute;margin:226px 0  0  416px;}
+			#qy12{position: absolute;margin:198px 0  0  480px;}
+			#qy13{position: absolute;margin:288px 0  0  406px;}
+			#qy14{position: absolute;margin:260px 0  0  466px;}
+			#qy15{position: absolute;margin:230px 0  0  532px;}
+		   .qyxz:hover{ background-image:url(../farmimg/cdqy.png);}
+		   .zwxz{width: 111px; height: 59px;background-image: url(../farmimg/zw.png); background-repeat: no-repeat;background-position-x: 33px; background-size: 30%;}

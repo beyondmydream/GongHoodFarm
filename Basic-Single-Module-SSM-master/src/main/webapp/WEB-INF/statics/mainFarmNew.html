@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<link rel="stylesheet" href="css/farm.css" />
+	
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.62,maximum-scale=0.62,user-scalable=on" />
+		
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+            function touser(){
+                window.location.href="userinfo.html";
+            }
+            function torankSys(){
+                window.location.href="rankSys.html";
+            }
+            function tobag(){
+                window.location.href="mypacksack.html";
+            }
+            function recharge(){
+                window.location.href="recharge.html";
+            }
+            function totask(){
+                window.location.href="taskList.html";
+            }
+            function tojiangli() {
+                window.location.href="no_development.html";
+            }
+            function togongshe() {
+                window.location.href="no_development.html";
+            }
+            function tochoujiang() {
+                window.location.href="no_development.html";
+            }
+            function tohuodong() {
+                window.location.href="no_development.html";
+            }
+            function toenhance() {
+                window.location.href="strengthenprop.html";
+            }
+            function toClass() {
+                window.location.href="survey-master/questionMain.html";
+            }
+            function toCai() {
+                window.location.href="farm.html";
+            }
+            function toZuoWu() {
+                window.location.href="farmshop.html";
+            }
+            function toGuYuan() {
+				window.location.href="farmshop.html"
+            }
+		</script>
+		
+		
+	</head>
+	<body class="jb">
+		<script>
+			$(document).ready(function(){
+				$("#up").click(function(){
+					$("#user_menu").hide(700);
+					$("#up").css({display:"none"});
+					$("#down").css({display:"block"});
+				});
+				$("#down").click(function(){
+					$("#user_menu").show(700);
+					$("#down").css({display:"none"});
+					$("#up").css({display:"block"});
+					
+				});
+			});
+		</script>
+		
+		<div class="user">
+			<div class="user_hp">
+			<div class="hendpor"><img src="farmimg/userdef.png" width="63" height="70" /></div>
+			<span class="lvfont">Lv</span><span class="lvfont grade">10</span>
+			</div>
+			<div id="user_info">
+				<div id="user_name"><span class="user_name_font" id="username">用户名</span>
+					<div id="menu_col">
+						<img src="farmimg/down.png" height="13" width="18" id="down">
+						<img src="farmimg/up.png" height="13" width="18" id="up" class="hide">
+					</div>
+				</div>
+				<div class="user_game_info"><img src="farmimg/tl.png" width="16" height="16" class=" img_view"><span class="user_game_font">体力</span><span class="user_game_font vitality">100</span></div>
+				<div class="user_game_info"><img src="farmimg/jb.png" width="16" height="16" class=" img_view"><span class="user_game_font">金币</span><span class="user_game_font money">100</span></div>
+				<div class="user_game_info"><img src="farmimg/zs.png" width="15" height="15" class=" img_view"><span class="user_game_font">钻石</span><span class="user_game_font diamond">100</span></div>
+			</div>
+			<div class="clear"></div>
+			<div id="user_menu" class="hide">
+				<div class="game_menu" onclick="recharge()"><img src="farmimg/cz.png" width="30" height="26" class=" img_menu"><span class="menu_font">充值</span></div>
+				<div class="game_menu" onclick="tohuodong()"><img src="farmimg/hd.png" width="25" height="25" class=" img_menu"><span class="menu_font">活动</span></div>
+				<div class="game_menu" onclick="tojiangli()"><img src="farmimg/jl.png" width="27" height="26" class=" img_menu"><span class="menu_font">奖励</span></div>
+				<div class="game_menu" onclick="tochoujiang()"><img src="farmimg/cj.png" width="25" height="26" class=" img_menu"><span class="menu_font">抽奖</span></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="eth">
+			<div id="switch1" onclick="togongshe()"><span>住宅区</span></div>
+			<div id="switch2" onclick="togongshe()"><span>观景餐厅</span></div>
+			<div id="switch3" onclick="toGuYuan()"><span>道具雇员店</span></div>
+			<div id="switch4" onclick="toClass()"><span>武林课堂</span></div>
+			<div id="switch5" onclick="toZuoWu()"><span>产品交易中心</span></div>
+			<div id="switch6" onclick="toCai()"><span>农场菜地</span></div>
+		</div>
+		<div class="cinput">
+				<input type="button"  class="bt" value="任务"  onclick="totask()"/>
+				<input type="button"  class="bt" value="背包" onclick="tobag()"/>
+				<input type="button"  class="bt" value="强化道具" onclick="toenhance()"/>
+				<input type="button"  class="bt" value="公社" onclick="togongshe()"/>
+				<input type="button"  class="bt" value="排行榜" onclick="torankSys()"/>
+			</div>
+		
+		
+	</body>
+
+	<!--个人信息模块-->
+	<script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "post",
+                url: "/lakeFarm/GetUserInfo.from",
+                dataType: "html",
+                success: function (msg) {
+                    if(msg=="100"){
+                        alert("网络异常");
+                    }
+                    else if(msg=="101"||msg=="102"){
+                        alert("你还没有登陆，请重新登陆");
+                        window.location.href="login.html";
+                    }
+                    else {
+                        var u_vitality=msg.split("#")[5].split(":")[1];
+                        var u_diamond=msg.split("#")[2].split(":")[1];
+                        var u_money=msg.split("#")[1].split(":")[1];
+                        var u_grade=msg.split("#")[6].split(":")[1];
+                        var u_name=msg.split("#")[0].split(":")[1];
+                        $(".vitality").html(u_vitality);
+                        $(".money").html(u_money);
+                        $(".diamond").html(u_diamond);
+                        $(".grade").html(u_grade);
+                        $("#username").html(u_name);
+                    }
+                }
+            });
+        });
+	</script>
+</html>

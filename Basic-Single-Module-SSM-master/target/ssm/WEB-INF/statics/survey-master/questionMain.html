@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.6,user-scalable=no" id="vt"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/farm.css"/>
+    <title>Title</title>
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<input type="button" id="ziliao" value="资料库" onclick="change(this.id)"/><br>
+<input type="button" id="wenjuan" value="我的问卷" onclick="change(this.id)"/><br>
+<input type="button" id="score" value="我的成绩" onclick="change(this.id)"/><br>
+<input type="button" id="back" value="返回" onclick="change(this.id)"/><br>
+<br style="clear: both"/>
+<div class="goback"></div>
+</body>
+<script type="text/javascript">
+    function change(v) {
+        if (v == "wenjuan") {
+            window.location.href = "./questionTest.html";
+        }
+        else if (v == "ziliao") {
+            window.location.href = "./QuestionSource.html";
+        }
+        else if (v == "score") {
+            window.location.href = "./record.html";
+        }
+        else if (v == "back"){
+            window.location.href = "../mainFarmNew.html";
+        }
+    }
+
+    $(".goback").click(function () {
+        window.location.href = 'mainFarmNew.html';
+    });
+</script>
+</html>
